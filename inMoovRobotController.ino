@@ -21,5 +21,6 @@ void loop() { //Looping function - Code that loops
   val = map(val, 0, 1023, 0, 180);     // Here we "scale" the value and constrain it work with servos (0-180)
   for (Servo s: fingers){ //Different type of for loop, called a foreach loop. Iterates through every entry in the fingers array
     s.write(val);
+    delay(15);
   }
 }
